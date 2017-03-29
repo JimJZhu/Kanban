@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="kanban.KanbanController" xmlns:fx="http://javafx.com/fxml"
+          alignment="TOP_LEFT" hgap="100" vgap="10"
+          styleClass="root">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+    <!--<gridLinesVisible>true</gridLinesVisible>-->
+    <Text id="welcome-text" text="Kanban"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2"/>
+    <Text id="welcome-text" text="Backlog"
+          GridPane.columnIndex="0" GridPane.rowIndex="1"
+          GridPane.columnSpan="2"/>
+    <Text id="welcome-text" text="Ready"
+          GridPane.columnIndex="1" GridPane.rowIndex="1"
+          GridPane.columnSpan="2"/>
+    <Text id="welcome-text" text="Working"
+          GridPane.columnIndex="2" GridPane.rowIndex="1"
+          GridPane.columnSpan="2"/>
+    <Text id="welcome-text" text="Review"
+          GridPane.columnIndex="3" GridPane.rowIndex="1"
+          GridPane.columnSpan="2"/>
+    <Text id="welcome-text" text="Complete"
+          GridPane.columnIndex="4" GridPane.rowIndex="1"
+          GridPane.columnSpan="2"/>
+    <stylesheets>
+        <URL value="@Kanban.css"/>
+    </stylesheets>
+</GridPane>
