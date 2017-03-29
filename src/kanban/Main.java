@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("kanban.fxml"));
-        Scene scene = new Scene(root, 600, 275);
+        Scene scene = new Scene(root, 1200, 600);
         primaryStage.setTitle("Kanban Task Manager");
         primaryStage.setScene(scene);
         primaryStage.show();
