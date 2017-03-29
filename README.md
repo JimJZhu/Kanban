@@ -1,2 +1,2 @@
-#Personal Kanban style task tracker. 
+# Personal Kanban style task tracker. 
 Kanban makes me feel satisfied. 
