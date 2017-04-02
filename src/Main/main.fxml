@@ -6,6 +6,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
 <GridPane fx:controller="Main.MainController" xmlns:fx="http://javafx.com/fxml"
           alignment="TOP_LEFT" hgap="100" vgap="10"
           styleClass="root">
@@ -17,24 +19,58 @@
           GridPane.columnIndex="0" GridPane.rowIndex="0"
           GridPane.columnSpan="2"/>
     <Text id="lane-title" text="Backlog"
-          GridPane.columnIndex="0" GridPane.rowIndex="1"
-          GridPane.columnSpan="1"/>
+          GridPane.columnIndex="0" GridPane.rowIndex="1"/>
     <Text id="lane-title" text="Ready"
-          GridPane.columnIndex="1" GridPane.rowIndex="1"
-          GridPane.columnSpan="1"/>
+          GridPane.columnIndex="1" GridPane.rowIndex="1"/>
     <Text id="lane-title" text="Working"
-          GridPane.columnIndex="2" GridPane.rowIndex="1"
-          GridPane.columnSpan="1"/>
+          GridPane.columnIndex="2" GridPane.rowIndex="1"/>
     <Text id="lane-title" text="Review"
-          GridPane.columnIndex="3" GridPane.rowIndex="1"
-          GridPane.columnSpan="1"/>
+          GridPane.columnIndex="3" GridPane.rowIndex="1"/>
     <Text id="lane-title" text="Complete"
-          GridPane.columnIndex="4" GridPane.rowIndex="1"
-          GridPane.columnSpan="1"/>
-    <FlowPane GridPane.columnIndex="0" GridPane.rowIndex="2"
-              GridPane.columnSpan="2" GridPane.rowSpan="10">
-        <Text text="Sample Task"/>
-    </FlowPane>
+          GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+    <ScrollPane GridPane.columnIndex="0" GridPane.rowIndex="2"
+                GridPane.columnSpan="1" GridPane.rowSpan="10">
+        <content>
+            <FlowPane fx:id="backlogLane" orientation="VERTICAL">
+            </FlowPane>
+        </content>
+    </ScrollPane>
+    <ScrollPane GridPane.columnIndex="1" GridPane.rowIndex="2"
+                GridPane.columnSpan="1" GridPane.rowSpan="10">
+        <content>
+            <FlowPane fx:id="readyLane" orientation="VERTICAL">
+            </FlowPane>
+        </content>
+    </ScrollPane>
+    <ScrollPane GridPane.columnIndex="2" GridPane.rowIndex="2"
+                GridPane.columnSpan="1" GridPane.rowSpan="10">
+        <content>
+            <FlowPane fx:id="workingLane" orientation="VERTICAL">
+            </FlowPane>
+        </content>
+    </ScrollPane>
+    <ScrollPane GridPane.columnIndex="3" GridPane.rowIndex="2"
+                GridPane.columnSpan="1" GridPane.rowSpan="10">
+        <content>
+            <FlowPane fx:id="reviewLane" orientation="VERTICAL">
+            </FlowPane>
+        </content>
+    </ScrollPane>
+    <ScrollPane GridPane.columnIndex="4" GridPane.rowIndex="2"
+                GridPane.columnSpan="1" GridPane.rowSpan="10">
+        <content>
+            <FlowPane fx:id="completeLane" orientation="VERTICAL">
+            </FlowPane>
+        </content>
+    </ScrollPane>
+    <HBox spacing="10" alignment="bottom_right"
+          GridPane.columnIndex="3" GridPane.rowIndex="40">
+        <Button text="New Task"
+                onAction="#handleCreateNewTask"/>
+    </HBox>
+
+    <Text fx:id="actiontarget"
+          GridPane.columnIndex="4" GridPane.rowIndex="40"/>
     <stylesheets>
         <URL value="@Main.css"/>
     </stylesheets>
