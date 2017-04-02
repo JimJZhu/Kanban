@@ -29,38 +29,38 @@
     <Text id="lane-title" text="Complete"
           GridPane.columnIndex="4" GridPane.rowIndex="1"/>
     <ScrollPane GridPane.columnIndex="0" GridPane.rowIndex="2"
-                GridPane.columnSpan="1" GridPane.rowSpan="10">
+                GridPane.columnSpan="1" GridPane.rowSpan="35">
         <content>
-            <FlowPane fx:id="backlogLane" orientation="VERTICAL">
-            </FlowPane>
+            <VBox fx:id="backlogLane">
+            </VBox>
         </content>
     </ScrollPane>
     <ScrollPane GridPane.columnIndex="1" GridPane.rowIndex="2"
-                GridPane.columnSpan="1" GridPane.rowSpan="10">
+                GridPane.columnSpan="1" GridPane.rowSpan="35">
         <content>
-            <FlowPane fx:id="readyLane" orientation="VERTICAL">
-            </FlowPane>
+            <VBox fx:id="readyLane">
+            </VBox>
         </content>
     </ScrollPane>
     <ScrollPane GridPane.columnIndex="2" GridPane.rowIndex="2"
-                GridPane.columnSpan="1" GridPane.rowSpan="10">
+                GridPane.columnSpan="1" GridPane.rowSpan="35">
         <content>
-            <FlowPane fx:id="workingLane" orientation="VERTICAL">
-            </FlowPane>
+            <VBox fx:id="workingLane">
+            </VBox>
         </content>
     </ScrollPane>
     <ScrollPane GridPane.columnIndex="3" GridPane.rowIndex="2"
-                GridPane.columnSpan="1" GridPane.rowSpan="10">
+                GridPane.columnSpan="1" GridPane.rowSpan="35">
         <content>
-            <FlowPane fx:id="reviewLane" orientation="VERTICAL">
-            </FlowPane>
+            <VBox fx:id="reviewLane">
+            </VBox>
         </content>
     </ScrollPane>
     <ScrollPane GridPane.columnIndex="4" GridPane.rowIndex="2"
-                GridPane.columnSpan="1" GridPane.rowSpan="10">
+                GridPane.columnSpan="1" GridPane.rowSpan="35">
         <content>
-            <FlowPane fx:id="completeLane" orientation="VERTICAL">
-            </FlowPane>
+            <VBox fx:id="completeLane">
+            </VBox>
         </content>
     </ScrollPane>
     <HBox spacing="10" alignment="bottom_right"

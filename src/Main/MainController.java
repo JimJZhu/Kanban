@@ -10,7 +10,7 @@ public class MainController {
     @FXML
     private Text actiontarget;
     @FXML
-    private FlowPane backlogLane;
+    private VBox backlogLane;
 
     @FXML
     public void initialize() {
@@ -19,9 +19,7 @@ public class MainController {
     @FXML
     protected void handleCreateNewTask(ActionEvent event) {
         actiontarget.setText("New Task Created!");
-        VBox test = new VBox();
-        test.setStyle("-fx-border-color: black");
-        test.getChildren().add(new Text("Hi"));
+        Task test = new Task();
         backlogLane.getChildren().add(test);
     }
 
