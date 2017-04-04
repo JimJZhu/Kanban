@@ -16,7 +16,8 @@ public class Task extends VBox {
         this.title = new Text("New Title");
         this.description = new Text("New Description");
         this.getChildren().addAll(title, description);
-        this.setStyle("-fx-border-color: black");
+        this.setId("Task");
+//        this.setStyle("-fx-border-color: black");
     }
 
     public Text getTitle() {
